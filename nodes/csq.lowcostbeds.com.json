@@ -1,0 +1,41 @@
+{
+  "users": ["rails"],
+  "add-to-known_hosts": [
+    {"username":"rails", "hosts":["github.com"]}
+  ],
+  "openssh": {
+    "users": [
+      {"username": "rails",      "address": "*"},
+      {"username": "lowcost",    "address": "*"}
+    ] },
+  "rvm": {
+    "user_rubies": ["ruby-1.9.2"],
+    "user_global_gems": [ { "name": "bundler" } ],
+    "user_installs": [
+      {
+        "user": "rails"
+      }
+    ]
+  },
+  "mysql": {
+    "server_root_password":   "tUMb56G8A_s5f6MTkp3d",
+    "server_debian_password": "mC7ZRCAIHWsqndy1KAW8",
+    "server_repl_password":   "x8Loz8b_ySAP6O24fsX8"
+  },
+  "database_rails_user": { "username": "rails", "password": "14KNB8evaR8yw4kt", "db_type": "mysql" },
+  "additional-packages": [ "libpq-dev", "libmysqlclient-dev", "libcurl4-openssl-dev", "catdoc" ],
+  "nginx":  { "rails_home": "/home/rails", "server_names_hash_bucket_size": 128 },
+  "run_list": [
+    "recipe[latest-nginx]",
+    "recipe[nginx]",
+    "recipe[user::data_bag]",
+    "recipe[rvm::user]",
+    "recipe[additional-packages]",
+    "recipe[mysql::server]",
+    "recipe[database-rails-user]",
+    "recipe[openssh::configure]",
+    "recipe[add-to-known_hosts]"
+  ]
+}
+
+

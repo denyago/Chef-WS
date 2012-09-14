@@ -1,0 +1,6 @@
+{
+  "additional_packages": [ "libpq-dev" ],
+  "run_list":[
+    "recipe[additional_packages]"
+    ]
+}
