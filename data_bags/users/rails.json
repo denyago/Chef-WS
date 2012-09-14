@@ -1,0 +1,9 @@
+{
+  "id": "rails",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDohSQ3dINBzXpQuaeeaGt77ZRFjF2DDxGPTLMwWGBJYCeBrcQ4jbxKdW00GuXf0V898OuruDWFLdPEBmws39zrl9wNIbDzr4WKuBqXEFIcJiU8o6ZcG0hcaro3BKNQyIv34l+VvyTzSRpz1y3IQ7FAu15ElDEanTl3f9MVCVFx2C1K3IrT+GVdgMsTC58iAqFgJOJmxlnDlGrjwlb4xJV+q7N35dYJTZpeuj4qvZols0rMUIbrWXnnAtdChmJ8CF1r1S8TmlLE5vhznctLTAGguCKcaF2NZFqCFXvtJVs2zOpUxnGdTmjMIaLiqmbTgrFBBT0K1m+eo33eq8T45sa3 denyago@gmail.com"
+  ],
+  "shell": "\/bin\/bash",
+  "comment": "Rails default user",
+  "password": ""
+}
